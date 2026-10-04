@@ -53,6 +53,9 @@ All internal links are relative (no leading `/`), so the site works from that su
 | --- | --- | --- |
 | `TODO_GITHUB_URL` | Customer Churn, MRI, Resume Assistant cards | Paste each repo URL, or leave the button hidden |
 | `TODO_LIVE_DEMO_URL` | Team Task & Sprint Tracker, MRI cards | Paste the deployed URL, or leave it hidden |
+| `TODO_SITE_URL` | `<head>`, above `<link rel="canonical">` | Confirm the canonical URL once Pages is on |
+| `TODO_CONFIRM_LINKEDIN_URL` | hero, above the LinkedIn icon link | Confirm which LinkedIn vanity URL is current |
+| `TODO_CHURN_PRECISION_RECALL` | churn card's details block | Add precision/recall if you have them |
 
 The **GitHub** and **Live Demo** buttons for those cards are deliberately **not rendered** —
 there is no broken link anywhere on the page. To switch one on, uncomment the matching `<a>`
@@ -80,8 +83,11 @@ Keep it under ~150 KB. The CSS crops it to a circle, so a square original is ide
   Your brief listed a slightly shorter form as `TODO_CONFIRM_LINKEDIN_URL`. If the shorter one
   is current, update it in `index.html` (three places).
 - **Project screenshots** — the six covers in `assets/images/cover-*.webp` are typographic
-  previews designed for this build, not real captures. Swap them for real screenshots
-  (1200×750, WebP, under 150 KB) and update the `alt` text as you go.
+  previews designed for this build, not real captures. Each one carries an
+  **"Illustrative preview"** badge so nobody mistakes it for a screenshot. To swap in a real
+  capture: replace the file (1200×750, WebP, under 150 KB), then **delete the
+  `project-media--illustrative` class** from that card's `<div class="project-media …">` — the
+  badge disappears with it. Update the `alt` text too.
 - **Resume** — `assets/resume.pdf` was generated from the brief's source-of-truth section so
   the site and CV tell the same story. Replace it with your own LaTeX build whenever you like;
   keep the filename and every link keeps working.
@@ -101,6 +107,10 @@ Keep it under ~150 KB. The CSS crops it to a circle, so a square original is ide
   disclosure, `aria-pressed` on the filters, a polite live region announcing filter results,
   alt text on all images, and contrast ≥ 4.5:1 across 15 measured combinations.
 - **Motion:** one 260ms fade-in and a 2px card lift, both disabled under `prefers-reduced-motion`.
+- **No-JavaScript fallback:** a `<noscript>` block in `index.html` reveals every case-study panel,
+  un-hides filtered-out cards and hides the filter buttons, which would otherwise be dead controls.
+- **Structured data:** a JSON-LD `Person` block (name, jobTitle, email, GitHub/LinkedIn, Hyderabad)
+  for search engines.
 
 ## Editing guide
 

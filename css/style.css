@@ -422,7 +422,31 @@ a:hover { text-decoration: underline; }
 .project-card--featured { grid-column: 1 / -1; }
 .project-card--featured .project-media img { aspect-ratio: 16 / 7; }
 
-.project-media { background: #F4F7FA; border-bottom: 1px solid var(--border); }
+.project-media {
+  position: relative;
+  background: #F4F7FA;
+  border-bottom: 1px solid var(--border);
+}
+
+/* "Illustrative preview" badge.
+   The class .project-media--illustrative is what shows it — delete that class
+   from a card once you drop in a real screenshot and the badge disappears. */
+.preview-badge {
+  display: none;
+  position: absolute;
+  right: var(--s-1);
+  bottom: var(--s-1);
+  padding: 3px 9px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+}
+.project-media--illustrative .preview-badge { display: inline-block; }
 .project-media img {
   width: 100%;
   aspect-ratio: 8 / 5;
@@ -636,6 +660,9 @@ a:hover { text-decoration: underline; }
   white-space: nowrap;
 }
 
+/* conceptual skills carry no icon, so they need even padding */
+.chip-skill--plain { padding: 6px 12px; }
+
 /* icon slot: main.js injects an inline SVG into each of these */
 .chip-icon {
   display: inline-flex;
@@ -681,6 +708,12 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.block-title--sub {
+  margin-top: var(--s-3);
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--border);
 }
 
 .entry + .entry {

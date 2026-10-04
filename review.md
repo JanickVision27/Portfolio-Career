@@ -13,9 +13,9 @@ Generated 04 October 2026 · everything below is measured from the files, not as
 
 | File | SHA-256 (first 16) |
 | --- | --- |
-| `index.html` | `f284f2680a0e02af` |
-| `css/style.css` | `c5f6e3468712d0d5` |
-| `js/main.js` | `bf66ef45fe0ba0d3` |
+| `index.html` | `47662ca0c09e3a26` |
+| `css/style.css` | `fe48bc8494a57c8b` |
+| `js/main.js` | `3a1a9611daeea242` |
 
 If the three hashes above still match your working copy, every number in this report is current. Change any of those files and the report becomes stale — ask for it to be regenerated.
 
@@ -59,8 +59,8 @@ If the three hashes above still match your working copy, every number in this re
 
 ## 3. Skill and UI icons
 
-- Icons defined in `js/main.js`: **36**
-- Icon slots used in `index.html`: **36**
+- Icons defined in `js/main.js`: **29**
+- Icon slots used in `index.html`: **29**
 - Used but not defined (would render blank): **none**
 - Defined but unused: none
 - Icons that are invalid SVG: **none**
@@ -68,24 +68,24 @@ If the three hashes above still match your working copy, every number in this re
 
 ## 4. Requests and weight
 
-- Third-party hosts referenced: ['fonts.googleapis.com', 'fonts.gstatic.com', 'github.com', 'www.linkedin.com']
+- Third-party hosts referenced: ['fonts.googleapis.com', 'fonts.gstatic.com', 'github.com', 'janickvision27.github.io', 'schema.org', 'www.linkedin.com']
 - Fonts: Google Fonts (Inter 400-700, JetBrains Mono 400-500) — 2 hosts, preconnected
 - Icons: inline SVG only, no icon font
-- Files in the project: **18**, total **243 KB**
+- Files in the project: **19**, total **249 KB**
 
 | Largest assets | Size |
 | --- | --- |
 | `assets/resume.pdf` | 42.4 KB |
 | `assets/images/og-image.png` | 36.0 KB |
-| `index.html` | 32.8 KB |
-| `css/style.css` | 22.0 KB |
-| `assets/images/cover-banking.webp` | 14.5 KB |
-| `js/main.js` | 13.9 KB |
+| `index.html` | 34.4 KB |
+| `css/style.css` | 22.8 KB |
+| `assets/images/cover-banking.webp` | 15.4 KB |
+| `assets/images/cover-mri.webp` | 14.0 KB |
 
 ## 5. SEO and sharing
 
 - Title (48 chars, aim <=60): Venkata Vikranth Jannatha — Full-Stack Developer
-- Meta description (142 chars, aim <=160): Full-stack developer with hands-on experience in Java, Spring Boot, React.js and SQL, plus a year as a Junior Developer on production systems.
+- Meta description (151 chars, aim <=160): Full-stack developer with a year of production experience as a Junior Developer. Secure REST APIs and real-time apps in Java, Spring Boot and React.js.
 - `og:title`: present
 - `og:description`: present
 - `og:image`: present
@@ -97,8 +97,11 @@ If the three hashes above still match your working copy, every number in this re
 
 ## 6. Placeholders in the source
 
+- `TODO_CHURN_PRECISION_RECALL` — 1 occurrence (inside an HTML comment, hidden from visitors)
+- `TODO_CONFIRM_LINKEDIN_URL` — 1 occurrence (inside an HTML comment, hidden from visitors)
 - `TODO_GITHUB_URL` — 3 occurrences (inside an HTML comment, hidden from visitors)
 - `TODO_LIVE_DEMO_URL` — 2 occurrences (inside an HTML comment, hidden from visitors)
+- `TODO_SITE_URL` — 1 occurrence (inside an HTML comment, hidden from visitors)
 
 - Placeholders rendering as visible text on the page: **0** (correct — none should be visible)
 
@@ -113,4 +116,46 @@ If the three hashes above still match your working copy, every number in this re
 - `aria-pressed` on filters: 3 of 5 filters
 - Live region for filter results: present
 - CSS variables defined: 35
+
+## 8. Final polish pass — assertions
+
+| PASS | No "58.5" anywhere in the page |
+| PASS | No "Xception at" phrasing |
+| PASS | MRI 77.3% is the only MRI accuracy figure |
+| PASS | "Illustrative preview" badge markup present |
+| PASS | Badge is driven by project-media--illustrative |
+| PASS | No visible "CV" label (uses "Resume") |
+| PASS | CrewAI chip removed from the page |
+| PASS | Conceptual skills carry no icon |
+| PASS | Seven unused icon definitions deleted |
+| PASS | No icon referenced but undefined |
+| PASS | No icon defined but unused |
+| PASS | noscript fallback shows hidden content |
+| PASS | canonical link with TODO_SITE_URL |
+| PASS | JSON-LD Person block present |
+| PASS | TODO_CONFIRM_LINKEDIN_URL comment present |
+| PASS | TODO_CHURN_PRECISION_RECALL comment present |
+| PASS | Every resume.pdf link has an aria-label |
+| PASS | All target=_blank links carry rel=noopener |
+| PASS | Meta description under 160 characters |
+| PASS | Hero pitch matches the approved text |
+
+| Check | Result |
+| --- | --- |
+| Filter buttons carrying `aria-pressed` | 3 of 3 |
+| Icons defined in `js/main.js` | 29 |
+| Icons used in `index.html` | 29 |
+| Placeholders rendered as visible text | 0 |
+| TODO comments present in source | 8 |
+
+## 9. TODO placeholders you must fill in
+
+| Placeholder | Count | What to supply |
+| --- | --- | --- |
+| `TODO_GITHUB_URL` | 3 | Repository URLs for Customer Churn, MRI and Resume Assistant |
+| `TODO_LIVE_DEMO_URL` | 2 | Deployed URLs for the Sprint Tracker and the MRI Streamlit app |
+| `TODO_SITE_URL` | 1 | Confirm the canonical URL once Pages is on |
+| `TODO_CONFIRM_LINKEDIN_URL` | 1 | Confirm which LinkedIn vanity URL is current |
+| `TODO_CHURN_PRECISION_RECALL` | 1 | Add precision/recall if you have them |
+| Real screenshots | 6 | Replace every `cover-*.webp`, then delete its `project-media--illustrative` class |
 

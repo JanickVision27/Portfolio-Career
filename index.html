@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Venkata Vikranth Jannatha — Full-Stack Developer</title>
-  <meta name="description" content="Full-stack developer with hands-on experience in Java, Spring Boot, React.js and SQL, plus a year as a Junior Developer on production systems.">
+  <meta name="description" content="Full-stack developer with a year of production experience as a Junior Developer. Secure REST APIs and real-time apps in Java, Spring Boot and React.js.">
   <meta name="author" content="Venkata Vikranth Jannatha">
   <meta name="theme-color" content="#fafaf9">
 
   <!-- Open Graph / social preview -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Venkata Vikranth Jannatha — Full-Stack Developer">
-  <meta property="og:description" content="Java, Spring Boot and React.js developer with a data analytics background. Secured REST APIs, real-time applications and machine-learning projects.">
+  <meta property="og:description" content="Full-stack developer with a year of production experience as a Junior Developer. Secure REST APIs and real-time apps in Java, Spring Boot and React.js.">
   <meta property="og:image" content="assets/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Venkata Vikranth Jannatha — Full-Stack Developer">
-  <meta name="twitter:description" content="Java, Spring Boot and React.js developer. Projects, case studies and CV.">
+  <meta name="twitter:description" content="Java, Spring Boot and React.js developer. Projects, case studies and resume.">
   <meta name="twitter:image" content="assets/images/og-image.png">
+
+  <!-- TODO_SITE_URL: confirm this once GitHub Pages is enabled for the repository -->
+  <link rel="canonical" href="https://janickvision27.github.io/Portfolio-Career/">
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
@@ -32,11 +35,40 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Venkata Vikranth Jannatha",
+    "jobTitle": "Full-Stack Developer",
+    "email": "vjannatha@gmail.com",
+    "sameAs": [
+      "https://github.com/JanickVision27",
+      "https://www.linkedin.com/in/venkata-vikranth-jannatha-642323244/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hyderabad",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
 </head>
 
 <body id="top">
 
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <noscript>
+    <style>
+      /* Without JavaScript, nothing may stay hidden. */
+      .filters { display: none; }                 /* the filter buttons would be dead controls */
+      .details-toggle { display: none; }          /* so would the disclosure buttons */
+      .project-card[hidden] { display: flex; }    /* a filtered-out card must still be readable */
+      .details[hidden] { display: block; }        /* case studies read inline instead */
+    </style>
+  </noscript>
 
   <!-- ===================== 1. Navbar ===================== -->
   <header class="site-header" id="site-header">
@@ -56,7 +88,8 @@
           <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a class="btn btn--primary btn--sm" href="assets/resume.pdf" target="_blank" rel="noopener">
+            <a class="btn btn--primary btn--sm" href="assets/resume.pdf" target="_blank" rel="noopener"
+                 aria-label="Open the resume PDF in a new tab">
               Resume
             </a>
           </li>
@@ -81,16 +114,14 @@
           </p>
 
           <p class="hero-pitch">
-            Full-stack developer with hands-on experience in Java, Spring Boot, React.js and SQL, plus a
-            year as a Junior Developer on production systems. Builds secure, well-tested REST APIs and
-            real-time applications, with a data analytics background that helps connect raw data to
-            user-facing features.
+            Full-stack developer with a year of production experience as a Junior Developer. I build secure, well-tested REST APIs and real-time applications in Java, Spring Boot, React.js and SQL, backed by a postgraduate diploma in data analytics.
           </p>
 
           <div class="hero-actions">
             <a class="btn btn--primary" href="#projects">View Projects</a>
-            <a class="btn btn--outline" href="assets/resume.pdf" target="_blank" rel="noopener">
-              Download CV
+            <a class="btn btn--outline" href="assets/resume.pdf" target="_blank" rel="noopener"
+                 aria-label="Open the resume PDF in a new tab">
+              Download Resume
             </a>
             <a class="btn btn--text" href="mailto:vjannatha@gmail.com">Email Me</a>
           </div>
@@ -105,6 +136,7 @@
               </a>
             </li>
             <li>
+              <!-- TODO_CONFIRM_LINKEDIN_URL: the same URL is used in the contact section and the JSON-LD block -->
               <a href="https://www.linkedin.com/in/venkata-vikranth-jannatha-642323244/" target="_blank" rel="noopener">
                 <span class="sr-only">LinkedIn profile (opens in a new tab)</span>
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -147,7 +179,8 @@
           <!-- ── Featured: Team Task & Sprint Tracker ── -->
           <article class="card project-card project-card--featured reveal"
                    data-category="fullstack" data-project-card>
-            <div class="project-media">
+            <div class="project-media project-media--illustrative">
+              <p class="preview-badge">Illustrative preview</p>
               <img src="assets/images/cover-tracker.webp" width="1200" height="750"
                    alt="Interface preview of the Team Task and Sprint Tracker: a Kanban board with TODO, In Progress and Done columns."
                    loading="eager" decoding="async">
@@ -156,7 +189,7 @@
             <div class="project-body">
               <p class="project-flag">Featured · Full-Stack</p>
               <h3 class="project-title">Team Task &amp; Sprint Tracker</h3>
-              <p class="project-meta">Aug 2026 — Present</p>
+              <p class="project-meta">Aug 2026 — Oct 2026</p>
               <p class="project-summary">
                 Full-stack sprint management app with real-time Kanban updates and secured REST APIs.
               </p>
@@ -199,7 +232,8 @@
 
           <!-- ── Vacation Request Management API ── -->
           <article class="card project-card reveal" data-category="fullstack" data-project-card>
-            <div class="project-media">
+            <div class="project-media project-media--illustrative">
+              <p class="preview-badge">Illustrative preview</p>
               <img src="assets/images/cover-vacation-api.webp" width="1200" height="750"
                    alt="Interface preview of the Vacation Request Management API: a leave balance panel beside a list of requests marked approved, pending and rejected."
                    loading="lazy" decoding="async">
@@ -232,8 +266,8 @@
             <div class="details" id="details-vacation" hidden>
               <h4>What it does</h4>
               <p>
-                Employees submit vacation requests and managers approve or reject them, with the
-                company's leave policy enforced by the API rather than the client.
+                Employees submit vacation requests and managers approve or reject them, with policy
+                validation and role-based access control.
               </p>
               <h4>What I built</h4>
               <ul>
@@ -248,7 +282,8 @@
 
           <!-- ── Secure International Banking System ── -->
           <article class="card project-card reveal" data-category="fullstack" data-project-card>
-            <div class="project-media">
+            <div class="project-media project-media--illustrative">
+              <p class="preview-badge">Illustrative preview</p>
               <img src="assets/images/cover-banking.webp" width="1200" height="750"
                    alt="Interface preview of the Secure International Banking System: a multi-currency transfer form beside a list of recent SWIFT transfers."
                    loading="lazy" decoding="async">
@@ -281,8 +316,7 @@
             <div class="details" id="details-banking" hidden>
               <h4>What it does</h4>
               <p>
-                Moves money between currencies with the validation and hardening an international
-                payment flow needs.
+                Multi-currency payment app with SWIFT validation and OWASP-based security hardening.
               </p>
               <h4>What I built</h4>
               <ul>
@@ -298,7 +332,8 @@
 
           <!-- ── Customer Churn Prediction Engine ── -->
           <article class="card project-card reveal" data-category="data" data-project-card>
-            <div class="project-media">
+            <div class="project-media project-media--illustrative">
+              <p class="preview-badge">Illustrative preview</p>
               <img src="assets/images/cover-churn.webp" width="1200" height="750"
                    alt="Interface preview of the Customer Churn Prediction Engine: accuracy and dataset cards above a churn-by-tenure chart and a chart of the top predictive features."
                    loading="lazy" decoding="async">
@@ -329,8 +364,8 @@
             <div class="details" id="details-churn" hidden>
               <h4>What it does</h4>
               <p>
-                Identifies which utility customers are likely to leave, and why — so retention effort
-                goes where it pays.
+                Predicts which utility customers are likely to leave and identifies the main churn
+                drivers.
               </p>
               <h4>What I built</h4>
               <ul>
@@ -340,14 +375,16 @@
               </ul>
               <h4>Key tech</h4>
               <p>Python · Pandas · NumPy · Scikit-Learn · Seaborn · SMOTE · RandomizedSearchCV</p>
+              <!-- TODO_CHURN_PRECISION_RECALL: add precision/recall if available -->
             </div>
           </article>
 
           <!-- ── MRI Classification Toolkit ── -->
           <article class="card project-card reveal" data-category="data" data-project-card>
-            <div class="project-media">
+            <div class="project-media project-media--illustrative">
+              <p class="preview-badge">Illustrative preview</p>
               <img src="assets/images/cover-mri.webp" width="1200" height="750"
-                   alt="Interface preview of the MRI Classification Toolkit: a four-class confusion matrix beside a model comparison chart showing CNN at 77.3 percent and Xception at 58.5 percent."
+                   alt="Interface preview of the MRI Classification Toolkit: a four-class confusion matrix beside a model comparison panel showing the CNN pipeline's 77.3 percent accuracy."
                    loading="lazy" decoding="async">
             </div>
 
@@ -393,7 +430,8 @@
 
           <!-- ── Context-Grounded LLM Resume Assistant ── -->
           <article class="card project-card reveal" data-category="data" data-project-card>
-            <div class="project-media">
+            <div class="project-media project-media--illustrative">
+              <p class="preview-badge">Illustrative preview</p>
               <img src="assets/images/cover-resume-assistant.webp" width="1200" height="750"
                    alt="Interface preview of the Context-Grounded LLM Resume Assistant: extracted resume fields feeding into an assistant chat with structured tool calls."
                    loading="lazy" decoding="async">
@@ -424,8 +462,8 @@
             <div class="details" id="details-resume" hidden>
               <h4>What it does</h4>
               <p>
-                Answers questions about a résumé it has actually read, and stays inside that context
-                instead of improvising.
+                LLM assistant grounded in a user's resume, using strict tool-calling and multi-turn
+                memory.
               </p>
               <h4>What I built</h4>
               <ul>
@@ -487,8 +525,8 @@
             <ul class="chips">
               <li class="chip-skill"><span class="chip-icon" data-icon="spring" aria-hidden="true"></span>Spring Boot</li>
               <li class="chip-skill"><span class="chip-icon" data-icon="jpa" aria-hidden="true"></span>Spring Data JPA</li>
-              <li class="chip-skill"><span class="chip-icon" data-icon="security" aria-hidden="true"></span>Spring Security</li>
-              <li class="chip-skill"><span class="chip-icon" data-icon="rest" aria-hidden="true"></span>REST APIs</li>
+              <li class="chip-skill chip-skill--plain">Spring Security</li>
+              <li class="chip-skill chip-skill--plain">REST APIs</li>
               <li class="chip-skill"><span class="chip-icon" data-icon="dotnet" aria-hidden="true"></span>ASP.NET MVC</li>
               <li class="chip-skill"><span class="chip-icon" data-icon="nodejs" aria-hidden="true"></span>Node.js / Express</li>
             </ul>
@@ -524,11 +562,10 @@
               <li class="chip-skill"><span class="chip-icon" data-icon="sklearn" aria-hidden="true"></span>Scikit-Learn</li>
               <li class="chip-skill"><span class="chip-icon" data-icon="tensorflow" aria-hidden="true"></span>TensorFlow/Keras</li>
               <li class="chip-skill"><span class="chip-icon" data-icon="pyspark" aria-hidden="true"></span>PySpark</li>
-              <li class="chip-skill"><span class="chip-icon" data-icon="crewai" aria-hidden="true"></span>CrewAI</li>
-              <li class="chip-skill"><span class="chip-icon" data-icon="predictive" aria-hidden="true"></span>Predictive Modeling</li>
-              <li class="chip-skill"><span class="chip-icon" data-icon="features" aria-hidden="true"></span>Feature Engineering</li>
-              <li class="chip-skill"><span class="chip-icon" data-icon="stats" aria-hidden="true"></span>Statistical Analysis</li>
-              <li class="chip-skill"><span class="chip-icon" data-icon="cleaning" aria-hidden="true"></span>Data Cleaning</li>
+              <li class="chip-skill chip-skill--plain">Predictive Modeling</li>
+              <li class="chip-skill chip-skill--plain">Feature Engineering</li>
+              <li class="chip-skill chip-skill--plain">Statistical Analysis</li>
+              <li class="chip-skill chip-skill--plain">Data Cleaning</li>
             </ul>
           </div>
 
@@ -573,13 +610,17 @@
                 <br><span class="cert-meta">Full-Stack Development Track (Python, MERN, Java, DSA) · Jun 2026 — Dec 2026</span>
               </li>
               <li>
+                <strong>Introduction to Programming Using Python</strong>
+              </li>
+            </ul>
+
+            <h3 class="block-title block-title--sub">Virtual experience programmes (job simulations)</h3>
+            <ul class="cert-list">
+              <li>
                 <strong>BCG Data Science Job Simulation</strong>
               </li>
               <li>
                 <strong>Accenture Nordics Software Engineering Job Simulation</strong>
-              </li>
-              <li>
-                <strong>Introduction to Programming Using Python</strong>
               </li>
             </ul>
           </div>
@@ -602,9 +643,10 @@
             <span class="chip-icon" data-icon="mail" aria-hidden="true"></span>
             Email Me
           </a>
-          <a class="btn btn--outline" href="assets/resume.pdf" target="_blank" rel="noopener">
+          <a class="btn btn--outline" href="assets/resume.pdf" target="_blank" rel="noopener"
+             aria-label="Open the resume PDF in a new tab">
             <span class="chip-icon" data-icon="download" aria-hidden="true"></span>
-            Download CV
+            Download Resume
           </a>
         </div>
 
